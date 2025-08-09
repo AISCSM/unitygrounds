@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unity Grounds Coffee House — London</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Brand -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#home" aria-label="Unity Grounds Coffee House">
+        <!-- small, simple logo -->
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <!-- 3 beans = 3 founders -->
+          <ellipse cx="18" cy="32" rx="7" ry="10" fill="#f97316"></ellipse>
+          <ellipse cx="32" cy="28" rx="7" ry="11" fill="#06b6d4"></ellipse>
+          <ellipse cx="46" cy="32" rx="7" ry="10" fill="#22c55e"></ellipse>
+          <!-- seams -->
+          <line x1="18" y1="23" x2="18" y2="41" stroke="#fff" stroke-width="2" opacity=".75"/>
+          <line x1="32" y1="18" x2="32" y2="38" stroke="#fff" stroke-width="2" opacity=".75"/>
+          <line x1="46" y1="23" x2="46" y2="41" stroke="#fff" stroke-width="2" opacity=".75"/>
+        </svg>
+        <div class="brand-text">
+          <h1 class="brand-name">Unity Grounds Coffee House</h1>
+          <p class="tagline">Where coffee, craft, and cultures blend.</p>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (compact, airy spacing) -->
+  <section id="home" class="hero">
+    <div class="container hero-wrap">
+      <p class="hero-line">
+        Single-origin beans from <strong>Thailand</strong>, <strong>Somalia</strong>, and <strong>India</strong> — roasted with love in London.
+      </p>
+      <p class="hero-sub">No online orders—just stories, smells, and sips.</p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Menu</h2>
+        <p class="muted">Simple prices. Click an item to see tasting notes.</p>
+      </div>
+
+      <!-- Hot -->
+      <div class="menu-group">
+        <h3 class="menu-title">Hot</h3>
+        <div class="menu-grid">
+          <button class="item" data-name="Espresso" data-price="£2.50" data-desc="Short, syrupy, chocolate-led shot.">
+            <span>Espresso</span><em>£2.50</em>
+          </button>
+          <button class="item" data-name="Americano" data-price="£2.80" data-desc="Clean and comforting long black.">
+            <span>Americano</span><em>£2.80</em>
+          </button>
+          <button class="item" data-name="Flat White" data-price="£3.20" data-desc="Silky microfoam over a bold base.">
+            <span>Flat White</span><em>£3.20</em>
+          </button>
+          <button class="item" data-name="Latte" data-price="£3.30" data-desc="Balanced and creamy. Your milk, your way.">
+            <span>Latte</span><em>£3.30</em>
+          </button>
+          <button class="item" data-name="Cappuccino" data-price="£3.30" data-desc="Classic foam, cocoa dust optional.">
+            <span>Cappuccino</span><em>£3.30</em>
+          </button>
+          <button class="item" data-name="Masala Chai Latte" data-price="£3.50" data-desc="Assam tea with ginger, cardamom, cinnamon, clove.">
+            <span>Masala Chai Latte</span><em>£3.50</em>
+          </button>
+          <button class="item" data-name="Filter Kaapi" data-price="£3.20" data-desc="South Indian metal-filter coffee with a chicory twist.">
+            <span>Filter Kaapi</span><em>£3.20</em>
+          </button>
+          <button class="item" data-name="Somali Qahwa (Spiced)" data-price="£3.50" data-desc="Lightly spiced with cardamom + clove.">
+            <span>Somali Qahwa (Spiced)</span><em>£3.50</em>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cold -->
+      <div class="menu-group">
+        <h3 class="menu-title">Cold</h3>
+        <div class="menu-grid">
+          <button class="item" data-name="Iced Latte" data-price="£3.60" data-desc="Cool, balanced, endlessly reliable.">
+            <span>Iced Latte</span><em>£3.60</em>
+          </button>
+          <button class="item" data-name="Cold Brew" data-price="£3.20" data-desc="18-hour steep, velvety body, low acidity.">
+            <span>Cold Brew</span><em>£3.20</em>
+          </button>
+          <button class="item" data-name="Thai Iced Coffee" data-price="£3.80" data-desc="Strong brew, sweetened condensed milk, ice.">
+            <span>Thai Iced Coffee</span><em>£3.80</em>
+          </button>
+          <button class="item" data-name="Orange Blossom Cold Brew" data-price="£3.90" data-desc="Citrus-kissed Thai single origin with a floral finish.">
+            <span>Orange Blossom Cold Brew</span><em>£3.90</em>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pastries -->
+      <div class="menu-group">
+        <h3 class="menu-title">Pastries</h3>
+        <div class="menu-grid">
+          <button class="item" data-name="Butter Croissant" data-price="£2.40" data-desc="Flaky, buttery, baked fresh daily.">
+            <span>Butter Croissant</span><em>£2.40</em>
+          </button>
+          <button class="item" data-name="Pain au Chocolat" data-price="£2.60" data-desc="Dark chocolate in a crisp laminated pastry.">
+            <span>Pain au Chocolat</span><em>£2.60</em>
+          </button>
+          <button class="item" data-name="Cardamom Bun" data-price="£2.80" data-desc="Buttery knot rolled in warm cardamom sugar.">
+            <span>Cardamom Bun</span><em>£2.80</em>
+          </button>
+          <button class="item" data-name="Coconut Sticky Rice Cake" data-price="£3.00" data-desc="Thai-style, gently sweet with a glossy top.">
+            <span>Coconut Sticky Rice Cake</span><em>£3.00</em>
+          </button>
+        </div>
+      </div>
+
+      <!-- Savoury -->
+      <div class="menu-group">
+        <h3 class="menu-title">Savoury</h3>
+        <div class="menu-grid">
+          <button class="item" data-name="Spinach & Feta Puff" data-price="£3.20" data-desc="Flaky pastry, herby spinach, creamy feta.">
+            <span>Spinach & Feta Puff</span><em>£3.20</em>
+          </button>
+          <button class="item" data-name="Vegetable Samosa" data-price="£2.20" data-desc="Crisp pastry with spiced potato + peas.">
+            <span>Vegetable Samosa</span><em>£2.20</em>
+          </button>
+          <button class="item" data-name="Cheddar & Chutney Toastie" data-price="£4.20" data-desc="Mature cheddar with tangy mango chutney.">
+            <span>Cheddar & Chutney Toastie</span><em>£4.20</em>
+          </button>
+          <button class="item" data-name="Plantain & Halloumi Muffin" data-price="£4.50" data-desc="Sweet plantain, salty halloumi, soft bun.">
+            <span>Plantain & Halloumi Muffin</span><em>£4.50</em>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section section-alt">
+    <div class="container about-wrap">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p class="muted">Unity Grounds Coffee House is a celebration of our diverse roots and shared love for exceptional coffee.</p>
+        <p>
+          Unity Grounds was born from the shared vision of three friends coming together in the vibrant, welcoming heart of London.
+        </p>
+        <p>
+          Our name is our promise: a place where flavours travel and people meet in the middle. We source directly and responsibly from smallholder
+          partners in Thailand, Somalia, and India, paying fairly and building long-term relationships that make every cup traceable and worth talking about.
+        </p>
+        <p>
+          In the café, we keep it simple and thoughtful—small-batch roasts, seasonal menus, and pastries from local makers. We minimise waste,
+          offer lower-impact milk options, and give our spent grounds to nearby gardens. It’s coffee with craft and care, shaped by our cultures and this incredible city.
+        </p>
+        <p class="signature">— The Unity Grounds Team</p>
+      </div>
+      <div class="about-card">
+        <ul class="ticks">
+          <li><strong>Direct/relationship coffee</strong> from Thailand, Somalia, India</li>
+          <li><strong>Local makers</strong> for pastries and provisions</li>
+          <li><strong>Seasonal rotations</strong> & transparent sourcing</li>
+          <li><strong>Lower-impact choices</strong> and waste-smart bar flow</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <small>© 2025 Unity Grounds Coffee House — London</small>
+      <small>“Where coffee, craft, and cultures blend.”</small>
+    </div>
+  </footer>
+
+  <!-- Menu Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="mName">
+    <div class="modal-card">
+      <button id="closeModal" class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="mName"></h3>
+      <p id="mDesc" class="muted"></p>
+      <span id="mPrice" class="pill price"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
