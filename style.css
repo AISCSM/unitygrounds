@@ -126,3 +126,58 @@ a:hover{color:var(--coffee); text-decoration:underline}
 .modal-list li em{
   font-style:normal; font-weight:900; color:#111827; margin-left:4px;
 }
+/* ==== Mobile Responsiveness ==== */
+
+/* Make fonts and paddings scale nicely */
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* Containers shrink with screen size */
+.container {
+  width: min(92%, 1000px);
+}
+
+/* Menu grid adapts */
+@media (max-width: 980px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  /* Stack everything vertically */
+  .site-nav {
+    display: none; /* Hide desktop nav */
+  }
+  .nav-toggle {
+    display: inline-block; /* Show burger icon */
+  }
+  .menu-grid {
+    grid-template-columns: 1fr; /* Single column menu */
+  }
+  .contact-wrap {
+    grid-template-columns: 1fr; /* Stack form & details */
+  }
+  .hero {
+    padding-top: 96px;
+  }
+  .hero-title {
+    font-size: 1.9rem;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 100%; /* Full-width buttons on mobile */
+    text-align: center;
+  }
+  .card {
+    padding: 16px;
+  }
+}
